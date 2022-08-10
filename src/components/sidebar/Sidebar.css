@@ -67,7 +67,7 @@ text-shadow: 1px 1px 1px rgba(0,0,0.335);
       top: 0;
       bottom: 0;
       height: 100%;
-      transform: translateX(-280px);
+      transform: translateX(-260px);
       z-index: 100;
     }
 
