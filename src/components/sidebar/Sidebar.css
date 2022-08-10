@@ -1,0 +1,78 @@
+.sidebar {
+    width: 300px;
+    min-width: 300px;
+    background: var(--btn-color);
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .sidebar-content {
+    position: fixed;
+    width: inherit;
+  }
+  .sidebar .user {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 40px 30px;
+    border-bottom: 1px solid rgba(165, 165, 165, 0.856);
+  }
+
+  .sidebar .user p span {
+color: var(--primary-text);
+text-shadow: 1px 1px 1px rgba(0,0,0.335);
+  }
+  .sidebar .links {
+    margin-top: 80px;
+    margin-left: 20px;
+  }
+  .sidebar .links li {
+    margin-top: 10px;
+  }
+
+  .sidebar .links a {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .sidebar .links .icon {
+    margin-right: 10px;
+    margin-top: 4px;
+    color: rgb(224, 224, 224);
+  }
+  .sidebar .links a.active {
+    color: white;
+    background: var(--primary-text);
+    border-radius: 20px 0 0 20px;
+  }
+  .sidebar .links a:hover {
+    color: rgb(15, 15, 15);
+    background: #e6e6e6;
+    border-radius: 20px 0 0 20px;
+  }
+  .sidebar .links .active img {
+    filter: invert(40%);
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      transform: translateX(-280px);
+      z-index: 100;
+    }
+
+    .sidebar:hover {
+      transform: translateX(0px);
+    }
+
+  }
