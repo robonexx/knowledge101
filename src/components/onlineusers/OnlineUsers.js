@@ -19,9 +19,9 @@ export default function OnlineUsers() {
     <div className='online-side'
       onClick={handleClick}
       >
-        online {isMobile ? <AiOutlineArrowDown /> : <AiOutlineArrowUp />}
+        online {!isMobile ? <AiOutlineArrowDown /> : <AiOutlineArrowUp />}
       </div>
-    <div className={isMobile ? 'online-users' : 'online-users active'}>
+    <div className={!isMobile ? 'online-users' : 'online-users active'}>
       <h2 >Online</h2>
       {error && <div className='error'>{error}</div>}
       {documents &&
