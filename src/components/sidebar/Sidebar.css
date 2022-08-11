@@ -66,9 +66,12 @@ text-shadow: 1px 1px 1px rgba(0,0,0.335);
       left: 0;
       top: 0;
       bottom: 0;
+      min-height: 100vh;
       height: 100%;
       transform: translateX(-260px);
       z-index: 100;
+      border-bottom-right-radius: 25px;
+      background: linear-gradient(180deg, black, rgba(0, 0, 0, 0.315));
     }
 
     .sidebar:hover {
