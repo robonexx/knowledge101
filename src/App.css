@@ -3,6 +3,7 @@
   background: var(--bg-color);
   width: 100%;
   height: 100%;
+  max-width: 100vw;
 }
 .App .container{
   flex-grow: 1;
@@ -12,7 +13,7 @@
 @media screen and (max-width: 768px) {
 
   .App .container{
-    flex-grow: 0;
-    padding: 100px 60px;
+    flex-grow: 1;
+    padding: 100px 60px 300px;
   }
 }
