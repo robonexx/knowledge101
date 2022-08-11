@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Avatar from '../avatar/Avatar';
 // styles
-import './TimelineList.css';
+import './PostList.css';
 
-export default function TimelineList({ schedule }) {
+export default function PostList({ schedule }) {
   return (
-    <div className='timeline-list'>
+    <div className='post-list'>
       {schedule.length === 0 && <p>Nothing here yet</p>}
       {schedule.map((t) => (
         <Link key={t.id} to={`/schemas/${t.id}`}>

@@ -1,11 +1,11 @@
 const filterList = ['all', 'mine', 'foundations', 'history', 'groove', 'steps', 'technique'];
 
-export default function ProjectFilter({ currentFilter, changeFilter }) {
+export default function PostFilter({ currentFilter, changeFilter }) {
   const handleClick = (newFilter) => {
     changeFilter(newFilter);
   };
   return (
-    <div className='timeline-filter'>
+    <div className='post-filter'>
       <nav>
         {filterList.map((f) => (
           <button

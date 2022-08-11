@@ -4,7 +4,7 @@ import Avatar from '../../components/avatar/Avatar';
 import { useFirestore } from '../../hooks/useFirestore';
 import { useAuthContext } from '../../hooks/useAuthContext';
 
-export default function SingleTimeline({ document }) {
+export default function SinglePost({ document }) {
   const { deleteDocument } = useFirestore('trainingschedule');
   const { user } = useAuthContext();
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ export default function SingleTimeline({ document }) {
     navigate('/');
   };
   return (
-    <div className='timeline-summary'>
+    <div className='post-summary'>
       <h2 className='page-title'>{document.name}</h2>
       <div>
         <p className='date'>

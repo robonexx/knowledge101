@@ -1,10 +1,10 @@
-.timeline-list {
+.post-list {
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
   }
-  .timeline-list a {
+  .post-list a {
     background-color: var(--bg-color-dark);
     padding: 16px;
     border-radius: 6px;
@@ -13,34 +13,34 @@
     color: white;
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
-  .timeline-list a:hover {
+  .post-list a:hover {
     background-color: var(--btn-color);
     box-shadow: 3px 3px 5px var(--text-color);
   
   }
-  .timeline-list h4 {
+  .post-list h4 {
     font-size: 0.9em;
     color: var(--text-color);
   }
-  .timeline-list p {
+  .post-list p {
     color: var(--text-color);
     font-size: 0.9em;
   }
-  .timeline-list ul {
+  .post-list ul {
     margin: 10px 0;
     display: flex;
   }
-  .timeline-list li {
+  .post-list li {
     margin-right: 10px;
   }
-  .timeline-list .avatar {
+  .post-list .avatar {
     width: 30px;
     height: 30px;
   }
 
   @media screen and (max-width: 786px) {
 
-    .timeline-list {
+    .post-list {
       display: flex;
       flex-direction: column;
       width: 80%;
@@ -48,7 +48,7 @@
       margin-top: 20px;
     }
 
-    .timeline-list a {
+    .post-list a {
       margin: 0 1rem;
       width: 100%;
     }

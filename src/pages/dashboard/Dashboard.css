@@ -1,18 +1,18 @@
-.timeline-filter {
+.post-filter {
     margin: 30px auto;
     
   }
-  .timeline-filter nav {
+  .post-filter nav {
     display: flex;
     padding: 10px;
     background-color: rgb(217, 217, 217);
     border-radius: 4px;
   }
-  .timeline-filter p {
+  .post-filter p {
     font-size: 0.9em;
     margin-right: 10px;
   }
-  .timeline-filter button {
+  .post-filter button {
     background: var(--heading-color);
     padding: 0 0.25rem;
     border: 0;
@@ -23,32 +23,32 @@
     border-right: 1px solid #d6d6d6;
     font-size: 0.9em;
   }
-  .timeline-filter button:last-child {
+  .post-filter button:last-child {
     border: 0;
   }
-  .timeline-filter button.active {
+  .post-filter button.active {
     color: var(--primary-color);
   } 
 
   
   @media screen and (max-width: 768px) {
-    .timeline-filter nav {
+    .post-filter nav {
       display: flex;
       padding: 0 2rem;
       background-color: rgb(217, 217, 217);
       border-radius: 4px;
     }
 
-    .timeline-filter button {
+    .post-filter button {
       background: var(--heading-color);
       padding: 0 0.5rem;
-      margin-right: 0.5rem;
+      margin-right: 0.2rem;
       border: 0;
       font-family: inherit;
       font-weight: bold;
       color: var(--primary-color);
       cursor: pointer;
       border-right: 1px solid #e4e4e4;
-      font-size: 0.9em;
+      font-size: 0.8rem;
     }
   }

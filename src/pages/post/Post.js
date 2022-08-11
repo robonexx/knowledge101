@@ -1,12 +1,12 @@
 import { useParams } from 'react-router-dom';
 import { useDocument } from '../../hooks/useDocument';
-import TimelineComments from './TimelineComments';
-import SingleTimeline from './SingleTimeline';
+import PostComments from './PostComments';
+import SinglePost from './SinglePost';
 
 // styles
-import './Timeline.css';
+import './Post.css';
 
-export default function Timeline() {
+export default function Post() {
   const { id } = useParams();
   const { error, document } = useDocument('trainingschedule', id);
 
@@ -17,9 +17,9 @@ export default function Timeline() {
     return <div className='loading'>Loading...</div>;
   }
   return (
-    <div className='timeline-details'>
-      <SingleTimeline document={document} />
-      <TimelineComments trainingschedule={document} />
+    <div className='post-details'>
+      <SinglePost document={document} />
+      <PostComments trainingschedule={document} />
     </div>
   );
 }

@@ -1,12 +1,11 @@
 import { useState } from 'react';
-
 import Avatar from '../../components/avatar/Avatar';
 import { timestamp } from '../../firebase/config';
 import { useAuthContext } from '../../hooks/useAuthContext';
 import { useFirestore } from '../../hooks/useFirestore';
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 
-export default function ProjectComments({ trainingschedule }) {
+export default function PostComments({ trainingschedule }) {
   const { user } = useAuthContext();
   const { updateDocument, response } = useFirestore('trainingschedule');
 
@@ -33,7 +32,7 @@ export default function ProjectComments({ trainingschedule }) {
   };
 
   return (
-    <div className='timeline-comments'>
+    <div className='post-comments'>
       <h4>Comments: </h4>
       <ul>
         {trainingschedule.comments.length > 0 &&

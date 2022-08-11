@@ -11,7 +11,7 @@ import { useAuthContext } from './hooks/useAuthContext';
 import Create from './pages/create/Create';
 import Dashboard from './pages/dashboard/Dashboard';
 import Login from './pages/login/Login';
-import Timeline from './pages/timeline/Timeline';
+import Post from './pages/post/Post';
 import Signup from './pages/signup/Signup';
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
                 element={!user ? <Navigate to='/login' /> : <Create />}
               />
               <Route path='schemas/:id'
-                element={!user ? <Navigate to='/login' /> : <Timeline />}
+                element={!user ? <Navigate to='/login' /> : <Post />}
               />
               <Route path='login'
                 element={!user ?  <Login /> : <Navigate to='/' />}

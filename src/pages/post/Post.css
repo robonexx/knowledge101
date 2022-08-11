@@ -1,46 +1,46 @@
-.timeline-details {
+.post-details {
     display: grid;
     grid-template-columns: 3fr 1.5fr;
     align-items: start;
     grid-gap: 60px;
   }
   
-  /* timeline summary */
-  .timeline-summary {
+  /* post summary */
+  .post-summary {
     background-color: #fff;
     padding: 30px;
     border-radius: 4px;
   }
-  .timeline-summary .date {
+  .post-summary .date {
     margin: 10px 0;
     font-size: 0.9em;
     color: var(--text-alt);
   }
-  .timeline-summary .details {
+  .post-summary .details {
     margin: 30px 0;
     color: var(--text-alt);
     line-height: 1.8em;
     font-size: 0.9em;
   }
   
-  .timeline-summary + .btn {
+  .post-summary + .btn {
     margin-top: 20px;
   }
   
-  /* timeline comments */
-  .timeline-comments label {
+  /* post comments */
+  .post-comments label {
     margin-bottom: 0px;
   }
-  .timeline-comments textarea {
+  .post-comments textarea {
     min-height: 40px;
     font-size: 1.5em;
   }
   
   /* comment list */
-  .timeline-comments h4 {
+  .post-comments h4 {
     color: var(--text-color);
   }
-  .timeline-comments li {
+  .post-comments li {
     padding: 16px;
     border-radius: 4px;
     border: 1px solid #f2f2f2;
@@ -70,7 +70,7 @@
 
   @media screen and (max-width: 768px ) {
 
-    .timeline-details {
+    .post-details {
       display: flex;
       flex-direction: column;
       align-items: center;

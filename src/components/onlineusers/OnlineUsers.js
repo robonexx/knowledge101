@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useCollection } from '../../hooks/useCollection';
 import Avatar from '../avatar/Avatar';
 import {AiOutlineArrowDown} from 'react-icons/ai'
@@ -8,13 +8,20 @@ import './OnlineUsers.css';
 
 export default function OnlineUsers() {
   const { error, documents } = useCollection('users');
+  const [isMobile, setIsMobile] = useState(false)
+
+  const handleClick = () => {
+    setIsMobile(!isMobile)
+  }
 
   return (
-    <div className='online-users'>
-      <div className='online-side'>
+    <div className={isMobile ? 'online-users' : 'online-users active'}>
+      <div className='online-side'
+      onClick={handleClick}
+      >
         online <AiOutlineArrowDown />
       </div>
-      <h2>Online</h2>
+      <h2 >Online</h2>
       {error && <div className='error'>{error}</div>}
       {documents &&
         documents.map((user) => (

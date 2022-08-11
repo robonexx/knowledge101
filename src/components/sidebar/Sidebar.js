@@ -3,9 +3,9 @@ import { useAuthContext } from '../../hooks/useAuthContext';
 
 // styles & images
 import './Sidebar.css';
-import { AiFillPlusSquare } from 'react-icons/ai';
-
-import { MdOutlineDashboard } from 'react-icons/md';
+import { AiFillPlusSquare, AiOutlineDashboard } from 'react-icons/ai';
+import { ImBooks } from 'react-icons/im'
+import { SiMusicbrainz } from 'react-icons/si'
 import Avatar from '../avatar/Avatar';
 
 export default function Sidebar() {
@@ -22,7 +22,7 @@ export default function Sidebar() {
           <ul>
             <li>
               <NavLink to='/'>
-                <MdOutlineDashboard className='icon' alt='dashboard icon' />
+                <AiOutlineDashboard className='icon' alt='dashboard icon' />
                 <span>Schedule overviews</span>
               </NavLink>
             </li>
@@ -30,6 +30,18 @@ export default function Sidebar() {
               <NavLink to='create'>
                 <AiFillPlusSquare className='icon' alt='add project icon' />
                 <span>Add new goals</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to='create'>
+                <ImBooks className='icon' alt='add project icon' />
+                <span>Knowledge</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to='create'>
+                <SiMusicbrainz className='icon' alt='add project icon' />
+                <span>Music</span>
               </NavLink>
             </li>
           </ul>

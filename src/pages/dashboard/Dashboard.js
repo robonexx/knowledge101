@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import TimelineList from '../../components/timelinelist/TimelineList';
+import PostList from '../../components/postlist/PostList';
 import { useAuthContext } from '../../hooks/useAuthContext';
 import { useCollection } from '../../hooks/useCollection';
-import TimelineFilter from './TimelineFilter';
+import PostFilter from './PostFilter';
 
 // styles
 import './Dashboard.css';
@@ -42,8 +42,8 @@ export default function Dashboard() {
       <h2 className='page-title'>Overview</h2>
       {error && <p className='error'>{error}</p>}
 
-      {document && <TimelineFilter changeFilter={changeFilter} />}
-      {documents && <TimelineList schedule={schedules} />}
+      {document && <PostFilter changeFilter={changeFilter} />}
+      {documents && <PostList schedule={schedules} />}
     </div>
   );
 }
