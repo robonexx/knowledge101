@@ -37,10 +37,16 @@
     .dashboard {
       margin-top: 100px;
     }
+
+    .post-filter {
+      max-width: 90%;
+      margin: 30px 0;
+    }
     
     .post-filter nav {
       display: flex;
-      padding: 0 2rem;
+      width: fit-content;
+      padding: 0;
       font-weight: 100;
       background-color: rgb(217, 217, 217);
       border-radius: 4px;
@@ -49,7 +55,7 @@
     .post-filter button {
       background: var(--heading-color);
       padding: 0 0.2rem;
-      margin-right: 0.2rem;
+      margin-right: 0.1rem;
       border: 0;
       font-family: inherit;
       font-weight: 100;

@@ -43,13 +43,14 @@
     .post-list {
       display: flex;
       flex-direction: column;
-      width: 80%;
+      width: 90%;
       margin: 0;
       margin-top: 20px;
     }
 
     .post-list li {
-      margin: 0 1rem;
+      margin: 0;
+      padding: 0.25 1rem;
       width: 100%;
     }
   }
