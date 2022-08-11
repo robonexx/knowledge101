@@ -33,13 +33,13 @@ export default function Sidebar() {
               </NavLink>
             </li>
             <li>
-              <NavLink to='create'>
+              <NavLink to='knowledge'>
                 <ImBooks className='icon' alt='add project icon' />
                 <span>Knowledge</span>
               </NavLink>
             </li>
             <li>
-              <NavLink to='create'>
+              <NavLink to='music'>
                 <SiMusicbrainz className='icon' alt='add project icon' />
                 <span>Music</span>
               </NavLink>

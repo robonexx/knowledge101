@@ -10,7 +10,9 @@ import { useAuthContext } from './hooks/useAuthContext';
 // pages
 import Create from './pages/create/Create';
 import Dashboard from './pages/dashboard/Dashboard';
+import Knowledge from './pages/knowledge/Knowledge';
 import Login from './pages/login/Login';
+import Music from './pages/music/Music';
 import Post from './pages/post/Post';
 import Signup from './pages/signup/Signup';
 
@@ -26,6 +28,12 @@ function App() {
             <Routes>
               <Route exact path='/'
                 element={!user ? <Navigate to='/login' /> : <Dashboard />}
+              />
+              <Route exact path='knowledge'
+                element={!user ? <Navigate to='/login' /> : <Knowledge />}
+              />
+              <Route exact path='music'
+                element={!user ? <Navigate to='/login' /> : <Music />}
               />
               <Route path='create'
                 element={!user ? <Navigate to='/login' /> : <Create />}
