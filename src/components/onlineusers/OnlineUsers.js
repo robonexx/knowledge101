@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { useCollection } from '../../hooks/useCollection';
 import Avatar from '../avatar/Avatar';
-import {AiOutlineArrowDown} from 'react-icons/ai'
+import {AiOutlineArrowDown, AiOutlineArrowUp} from 'react-icons/ai'
 
 // styles
 import './OnlineUsers.css';
@@ -15,12 +15,13 @@ export default function OnlineUsers() {
   }
 
   return (
-    <div className={isMobile ? 'online-users' : 'online-users active'}>
-      <div className='online-side'
+    <>
+    <div className='online-side'
       onClick={handleClick}
       >
-        online <AiOutlineArrowDown />
+        online {isMobile ? <AiOutlineArrowDown /> : <AiOutlineArrowUp />}
       </div>
+    <div className={isMobile ? 'online-users' : 'online-users active'}>
       <h2 >Online</h2>
       {error && <div className='error'>{error}</div>}
       {documents &&
@@ -32,5 +33,6 @@ export default function OnlineUsers() {
           </div>
         ))}
     </div>
+    </>
   );
 }
